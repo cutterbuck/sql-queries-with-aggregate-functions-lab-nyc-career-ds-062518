@@ -1,7 +1,8 @@
-import unittest, sqlite3
+import unittest2 as unittest
+import sqlite3
 import sys
 sys.path.insert(0, '..')
-from select import *
+from selector import *
 
 connection = sqlite3.connect('./babe_ruth.db')
 cursor = connection.cursor()
